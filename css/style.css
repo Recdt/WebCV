@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  html{
+    box-sizing: border-box;
+  }
+
+
+
+  *,*::before,*::after{
+    box-sizing: inherit;
+  }
+
+
+
+  body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro__title{
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .intro__subtitle{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 10px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    padding-bottom: 24px;
+    padding-left: 40px;
+  }
+
+  .details__title{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  .profile_header2,
+  .profile__title{
+    padding-top: 24px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  .profile_header2{
+    padding-top: 30px;
+  }
+  
+  .work_positions,
+  .details__subtitle{
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+
+  .details__subtitle{
+    padding-bottom: 12px;
+  }
+
+  .info_text_svg,
+  .info__text_dark,
+  .info__text{
+    display: block; 
+    padding-top: 4px; 
+    font-size: 9px;
+    color: rgba(0, 0, 0, 0.70);
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+  }
+
+  .info__text_dark{
+    color: #000000;
+  }
+  
+  .info_text_svg{
+    margin-top: 17px;
+  }
+
+  .links_last_link,
+  .links_text{
+    color: rgba(0, 0, 0, 0.70);
+    line-height: normal;
+    letter-spacing: 0.1px;
+    padding-bottom: 12px;
+  }
+
+  .links_last_link{
+    padding-bottom: 0px;
+  }
+  
+  .link{
+    text-decoration: none;
+  }
+
+  .link:hover, .link:focus, .link:active{
+    opacity: 0.75;
+  }
+
+  .left_part_customize,
+  .left_part{
+    padding-top: 24px;
+    padding-bottom: 40px;
+    float: left;
+  }
+
+  .left_part{
+    margin-left: 40px;
+    padding-right: 34px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .left_part_customize{
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+  }
+
+  .right_part_customize,
+  .right_part{
+    padding-top: 24px;
+    
+    float: left;
+    position: relative;
+    left: 0px;
+  }
+
+  .right_part{
+    border: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    padding-left: 26px;
+  }
+
+  .right_part_customize{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    left: 5px;
+  }
+
+  .right__header{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  .subtitle_position,
+  .subtitle,
+  .subtitle_position_v2{
+    max-width: 300px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.70);
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+
+  .subtitle_position_v2,
+  .subtitle_position{
+    padding-top: 8px;
+    max-width: 305px;
+    line-height: 13px;
+    padding-bottom: 15px;
+  }
+
+  .subtitle_position_v2{
+    line-height: 13px;
+    padding-bottom: 30px;
+  }
+
+  .print_button{
+    margin-top: 15px;
+    margin-left: 75%;
+  }
+
+  .main_class{}
+
+  @media(max-width: 570px){
+
+    .left_part{
+      border: 0;
+      border-top: 0px;
+      margin-left: 40px;
+      padding-right: 10px;
+    }
+    .right_part{
+      border: 0;
+      border-left: 0px;
+      border-top: 0px;
+      margin-bottom: 40px;
+      padding-left: 40px;
+    }
+    .print_button{
+      margin-top: 15px;
+      margin-left: 65%;
+    }
+  }
+
+  @media print {
+    .print_button {
+      display: none;
+    }
+    
+    .main_class {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .main_class {
+      width: 100%;
+      height: 100%;
+      position: static;
+    }
+  }
+  
